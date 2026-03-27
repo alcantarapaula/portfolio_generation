@@ -13,6 +13,7 @@
   <meta name="robots" content="index, follow">
 
   <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Portfólio - Paula Alcantara</title>
 </head>
@@ -49,7 +50,7 @@
     </section>
     <!-- Seção About -->
     <section id="about" class="section-container about-container">
-      <figure class="about-image">
+      <!-- <figure class="about-image">
         <img src="./assets/img/avatar_dev_woman.svg" alt="Foto do perfil do autor">
       </figure>
       <article class="about-content">
@@ -72,7 +73,7 @@
             </div>
           </div>
         </div>
-      </article>
+      </article> -->
     </section>
     <!-- Seção Projects -->
     <section id="projects" class="section-container projects-container">
@@ -80,27 +81,24 @@
       <!-- Swiper Container -->
        <div class="swiper projects-swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <!-- <div class="swiper-slide">
             <article class="project-card">
-              <!-- Ícone da tecnologia padrão do projeto -->
               <figure class="project-image">
                 <img src="./assets/icons/languages/github.svg" alt="ícone do GitHub">
               </figure>
               <div class="project-content">
                 <h3>Projeto GitHub</h3>
                 <p>Projeto desenvolvido no GitHub, lembre de colocar sempre uma descrição</p>
-                <!-- Tags do projeto -->
                 <div class="project-tags">
                   <span class="tag">GitHub</span>
                 </div>
-                <!-- Links do projeto -->
                  <div class="project-buttons">
                   <a href="#" target="_blank" class="botao botao-sm">GitHub</a>
                   <a href="#" target="_blank" class="botao-outline botao-sm">Deploy</a>
                  </div>
               </div>
             </article>
-          </div>
+          </div> -->
         </div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
@@ -123,7 +121,10 @@
         </div>
        </article>
       <!-- Formulário -->
-       <form id="formulario">
+       <form id="formulario" action="https://formsubmit.co/ac0f56f9d8067e773c1273d15980dbda" method="POST">
+
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html">
+        <input type="hidden" name="_captcha" value="false">
 
         <label for="nome">Nome</label>
         <input type="text" id="nome" name="nome" placeholder="Digite o seu nome completo">
@@ -152,5 +153,7 @@
       Desenvolvido por Paula Alcantara
     </p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>

@@ -477,7 +477,6 @@ header a:hover {
   max-height: 7rem;
   object-fit: contain;
   transition: transform 0.3s ease;
-  filter: brightness(0) saturate(100%) invert(100%) sepia(14%) saturate(6021%) hue-rotate(182deg) brightness(99%) contrast(109%);;
 }
 
 .project-content {
@@ -497,7 +496,8 @@ header a:hover {
 .project-content p {
   margin-bottom: var(--spacing-sm);
   font-size: var(--text-base);
-  color: var(--gray-200)
+  color: var(--gray-200);
+  flex: 1;
 }
 
 .project-tags {
